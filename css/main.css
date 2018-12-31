@@ -371,6 +371,8 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 140rem;
+    margin: 0 auto 15rem;
 }
 
 .about__list--item {
@@ -390,3 +392,149 @@ body, html {
 }
 
 
+/*-- BLOG STYLES --*/
+
+.blog {
+    background-color: #F1F1F1;
+    padding: .1rem;
+}
+
+.blog h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    margin: 11rem auto 9rem;
+}
+
+.blog__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12rem;
+}
+
+.blog__item {
+    background: linear-gradient(rgba(5, 5, 5, .5), rgba(5, 5, 5, .5)),
+                url("../img/drinkingCoffee.png");
+    background-size: cover;          
+    width: 35rem;
+    height: 48rem;
+    margin: 0 1.7rem;
+    transition: all .3s;
+    position: relative;
+}
+
+.blog__item:hover h3, .blog__item:hover h4, .blog__item:hover p {
+    color: black;
+}
+
+.blog__item:hover {
+    cursor: pointer;
+}
+
+.blog__item--heading {
+    bottom: 0;
+    color: white;
+    position: absolute;
+    z-index: 11;
+}
+
+.blog__item--heading h4 {
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    color: lightgray;
+    margin-bottom: 0;
+}
+
+.blog__item--heading h3 {
+    margin: .8rem 0 0 2rem;
+    font-size: 2.2rem;
+}
+
+.blog__item--heading p {
+    margin: 1.2rem 0 3rem 2rem;
+    color: lightgray;
+    font-size: 1.3rem;
+}
+
+.firstSlide {
+    background-color: white;
+    height: 16rem;
+    width: 100%;
+    bottom: 0;
+    display: none;
+    position: absolute;
+}
+
+.secondSlide {
+    background-color: white;
+    height: 16rem;
+    width: 100%;
+    bottom: 0;
+    display: none;
+    position: absolute;
+}
+
+.thirdSlide {
+    background-color: white;
+    height: 16rem;
+    width: 100%;
+    bottom: 0;
+    display: none;
+    position: absolute;
+}
+
+
+/*-- FOOTER STYLES --*/
+
+.footer {
+    text-align: center;
+}
+
+.footer span {
+    font-size: 1.3rem;
+    display: inline-block;
+    margin: 5rem auto;
+    color: gray;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.restaurant__list {
+    list-style: none;
+    padding: 0;
+}
+
+.communities__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 13rem;
+}
+
+.usefulLinks__list {
+    list-style: none;
+    padding: 0;
+}
+
+.restaurant__list--item, .communities__list--item, .usefulLinks__list--item {
+    font-size: 1.7rem;
+    color: gray;
+    margin: 1.8rem 0;
+}
+
+.restaurant__list--item:hover, .communities__list--item:hover, .usefulLinks__list--item:hover {
+    cursor: pointer;
+    color: #4FD78D;
+}
+
+.restaurant__list--item:first-child, .communities__list--item:first-child, .usefulLinks__list--item:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 2rem;
+}
