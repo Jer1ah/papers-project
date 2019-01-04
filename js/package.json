@@ -1,0 +1,19 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jer1ah/papers-project.git"
+  },
+  "author": "Jeriah Bowers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jer1ah/papers-project/issues"
+  },
+  "homepage": "https://github.com/Jer1ah/papers-project#readme"
+}

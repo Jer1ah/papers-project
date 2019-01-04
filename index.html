@@ -6,12 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Papers</title>
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header class="header">
-            <nav class="header__nav">
-                <h3>Papers</h3>
+            <nav class="header__nav" data-aos="fade-down" data-aos-duration="700">
+                <div class="navagation">
+                    <h3 class="animated bounce">Papers</h3>
+                    <div class="mobile__nav">
+                        <img src="img/menu.svg" alt="Nav Icon">
+                        <p>Menu</p>
+                    </div> <!-- .mobile__nav end -->
+                </div> <!-- .navagation end -->
                 <ul class="header__nav--list">
                     <li class="header__nav--items"><a href="#">Home</a></li>
                     <li class="header__nav--items"><a href="#">What We Do</a></li>
@@ -21,21 +28,22 @@
                 </ul> <!-- .header__nav-list end -->
             </nav> <!-- .header__nav end -->
             <div class="header__heading">
-                <h1>We create awesome templates for you.</h1>
-                <p>A free template for Business Websites. For busy business professionals Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button>Get this Template</button>
+                <h1 data-aos="fade-up" data-aos-duration="700">We create awesome templates for you.</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">A free template for Business Websites. For busy business professionals Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button data-aos="fade-up" data-aos-duration="1000">Get this Template</button>
             </div> <!-- .header__heading end -->
     </header> <!-- .header end -->
     <div class="main">
         <div class="main__top">
             <div class="main__top--para">
-                <p>For busy business professionals — A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p data-aos="fade-up"
+                   data-aos-duration="700">For busy business professionals — A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
             </div> <!-- .main__top-para end -->
             <div class="main__top--info">
-                <div class="main__top--img">
+                <div class="main__top--img" data-aos="fade-right" data-aos-duration="1000">
                     <img src="img/LookingUp.png" alt="Picture of Guy">
                 </div> <!-- .main__top-img end -->
-                <div class="main__top--heading">
+                <div class="main__top--heading"  data-aos="fade-up" data-aos-duration="1300">
                     <h3>Far far away, behind the word mountains</h3>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                     <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
@@ -43,17 +51,17 @@
             </div> <!-- .main__top-info end -->
         </div> <!-- .main__top end -->
         <div class="main__bottom">
-            <div class="main__bottom--left">
+            <div class="main__bottom--left" data-aos="fade-up" data-aos-duration="1000">
                 <h3>Far far away, behind the word mountains</h3>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                 <h3>A small river named Duden flows by their place</h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
             </div> <!-- .main__bottom-left end -->
             <div class="main__bottom--right">
-                <div class="main__bottom--right--img">
+                <div class="main__bottom--right--img"  data-aos="fade-left" data-aos-duration="1000">
                     <img src="img/drinkingCoffee.png" alt="Woman drinking Coffee">
                 </div> <!-- .main__bottom-right-img end -->
-                <div class="main__bottom--right--info">
+                <div class="main__bottom--right--info" data-aos="fade-left" data-aos-duration="1000">
                     <p>”A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.“</p>
                     <span>— Mellissa Clark</span>
                 </div> <!-- .main__bottom-right-info end -->
@@ -61,10 +69,10 @@
         </div> <!-- .main__bottom end -->
     </div> <!-- .main end -->
     <div class="testimonials">
-        <h1>Testimonials</h1>
+        <h1 data-aos="fade-up" data-aos-duration="700">Testimonials</h1>
         <div class="cards__container">
-            <div class="card__wrapper">
-                <div class="card">
+            <div class="card__wrapper" data-aos="fade-up" data-aos-duration="500">
+                <div class="card mobile">
                     <div class="front">
                         <h3>Mellisa Clark</h3>
                         <p>Web Designer</p>
@@ -78,7 +86,7 @@
                     </div> <!-- .back end -->
                 </div> <!-- .card end -->
             </div> <!-- .card__wrapper end -->
-            <div class="card__wrapper">
+            <div class="card__wrapper" data-aos="fade-up" data-aos-duration="700">
                 <div class="card no-flip">
                     <div class="static">
                         <p class="quote">“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>
@@ -89,8 +97,8 @@
                     </div> <!-- .back end -->
                 </div> <!-- .card end -->
             </div> <!-- .card__wrapper end -->
-            <div class="card__wrapper">
-                <div class="card">
+            <div class="card__wrapper" data-aos="fade-up" data-aos-duration="900">
+                <div class="card mobile">
                     <div class="front">
                         <h3>Mellisa Clark</h3>
                         <p>Web Designer</p>
@@ -107,38 +115,38 @@
         </div> <!-- .cards__container -->
     </div> <!-- .testimonials end -->
     <div class="about">
-        <h1>What We Do</h1>
+        <h1 data-aos="fade-up" data-aos-duration="700">What We Do</h1>
         <ul class="about__list">
-            <li class="about__list--item">
+            <li class="about__list--item" data-aos="fade-up" data-aos-duration="500">
                 <h3>Creative Performance</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
             </li>
-            <li class="about__list--item">
+            <li class="about__list--item" data-aos="fade-up" data-aos-duration="700">
                 <h3>Reach Performance</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
             </li>
-            <li class="about__list--item">
+            <li class="about__list--item" data-aos="fade-up" data-aos-duration="900">
                 <h3>Custom Development</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
             </li>
-            <li class="about__list--item">
+            <li class="about__list--item" data-aos="fade-up" data-aos-duration="500">
                 <h3>Creative Performance</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
             </li>
-            <li class="about__list--item">
+            <li class="about__list--item" data-aos="fade-up" data-aos-duration="700">
                 <h3>Reach Performance</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
             </li>
-            <li class="about__list--item">
+            <li class="about__list--item" data-aos="fade-up" data-aos-duration="900">
                 <h3>Custom Development</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
             </li>
         </ul> <!-- .about__list end -->
     </div> <!-- .about end -->
     <div class="blog">
-        <h1>Our Blog</h1>
+        <h1 data-aos="fade-up" data-aos-duration="700">Our Blog</h1>
         <ul class="blog__list">
-            <li class="blog__item first">
+            <li class="blog__item first" data-aos="fade-up" data-aos-duration="500">
                 <div class="blog__item--heading">
                     <h4>Travel</h4>
                     <h3>Far far away, behind the word mountains</h3>
@@ -146,7 +154,7 @@
                 </div> <!-- .blog__item-heading end -->
                 <div class="firstSlide"></div>
             </li>
-            <li class="blog__item second">
+            <li class="blog__item second" data-aos="fade-up" data-aos-duration="700">
                 <div class="blog__item--heading">
                     <h4>Travel</h4>
                     <h3>Far far away, behind the word mountains</h3>
@@ -154,7 +162,7 @@
                 </div> <!-- .blog__item-heading end -->
                 <div class="secondSlide"></div>
             </li>
-            <li class="blog__item third">
+            <li class="blog__item third" data-aos="fade-up" data-aos-duration="900">
                 <div class="blog__item--heading">
                     <h4>Travel</h4>
                     <h3>Far far away, behind the word mountains</h3>
@@ -193,7 +201,8 @@
 <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>    
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>    
 <script src="js/main.js"></script>    
 </body>
 </html>

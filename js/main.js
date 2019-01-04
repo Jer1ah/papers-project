@@ -1,5 +1,4 @@
 // Adding navbar scroll functionality
-
 $(window).on("scroll", () => {
     if( $(window).scrollTop() > 55 ) {
         $(".header__nav").addClass("active");
@@ -8,30 +7,42 @@ $(window).on("scroll", () => {
     }
 });
 
+// Mobile-Nav Functionality 
+$(".mobile__nav").on("click", () => {
+    if($(".header__nav--list").css("display") === "none") {
+        $(".header__nav--list").css("display", "block");
+    } else {
+        $(".header__nav--list").css("display", "none");
+    }
+});
+
+$(window).resize(() => {
+    if( $(window).innerWidth() > 950 ) {
+        $(".header__nav--list").css("display", "flex");
+    } else if( $(window).innerWidth() < 950 ) {
+        $(".header__nav--list").css("display", "none");
+    }
+})
 
 // Adding slide up effect on blog divs
-
 // first 
-$(".first").on("mouseover", () => {
-    $(".firstSlide").slideDown(200);
-});
-$(".first").on("mouseout", (evt) => {
-    $(".firstSlide").slideUp(200);
+$(".first").hover(() => {
+    $(".firstSlide").slideToggle(200);
 });
 
 // second
-$(".second").on("mouseover", () => {
-    $(".secondSlide").slideDown(200);
-});
-$(".second").on("mouseout", (evt) => {
-    $(".secondSlide").slideUp(200);
+$(".second").hover(() => {
+    $(".secondSlide").slideToggle(200);
 });
 
 // third
-$(".third").on("mouseover", () => {
-    $(".thirdSlide").slideDown(200);
+$(".third").hover(() => {
+    $(".thirdSlide").slideToggle(200);
 });
-$(".third").on("mouseout", (evt) => {
-    $(".thirdSlide").slideUp(200);
-});
+
+// Scroll Animations
+AOS.init();
+
+
+
 
