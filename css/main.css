@@ -101,17 +101,19 @@ body, html {
     color: #eee;
 }
 
-.header button {
+.header__heading a {
     background: inherit;
     border: 2px solid white;
     padding: 1.7rem 3rem;
+    display: inline-block; 
     margin-top: 2rem;
     font-size: 1.7rem;
     color: white; 
     transition: all .5s;
+    text-decoration: none;
 }
 
-.header button:hover {
+.header__heading a:hover {
     background: white;
     color: black;
     cursor: pointer;
@@ -655,8 +657,9 @@ body, html {
         max-width: 95%;        
     }
 
-    .header__heading button {
-        width: 100%;
+    .header__heading a {
+        width: 75%;
+        text-align: center;
     }    
 
     .mobile__nav {
